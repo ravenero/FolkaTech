@@ -30,6 +30,7 @@ const DetailProduct = props => {
 
   return (
     <SafeAreaView style={styles.container}>
+      {/* Header */}
       <View style={styles.header}>
         <TouchableOpacity onPress={() => navigation.goBack()} style={{flex: 1}}>
           <IonIcons name="arrow-back-circle-outline" size={26} color={GRAY} />
@@ -41,6 +42,7 @@ const DetailProduct = props => {
           <IonIcons name="share-social-outline" size={20} color={GRAY} />
         </TouchableOpacity>
       </View>
+      {/* End Header */}
       <View>
         <Image source={{uri: product.cover}} style={styles.images} />
         <View style={styles.content}>
